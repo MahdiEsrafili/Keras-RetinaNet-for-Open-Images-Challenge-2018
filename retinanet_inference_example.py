@@ -172,10 +172,11 @@ if __name__ == '__main__':
     iou_thr = 0.55
     limit_boxes_per_image = 300
     type = 'avg'
-
+    OUTPUT_PATH = 'output/'
     # files_to_process = glob.glob(INPUT_PATH + 'kaggle/challenge2018_test/*.jpg')
     files_to_process = glob.glob(DATASET_PATH + 'validation_big/*.jpg')
-
+    MODELS_PATH = 'model/'
+    model = 1
     if 1:
         backbone = 'resnet101'
         pretrained_model_path = MODELS_PATH + 'retinanet_resnet101_level_1_converted.h5'
